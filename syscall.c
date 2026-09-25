@@ -104,6 +104,9 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_trace(void);
+extern int sys_counter_reset(void);
+extern int sys_counter_inc(void);
+extern int sys_counter_get(void);
 static char *syscallnames[] = {
 [SYS_fork]    = "fork",
 [SYS_exit]    = "exit",
@@ -151,6 +154,9 @@ static int (*syscalls[])(void) = {
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
 [SYS_trace]   sys_trace,
+[SYS_counter_reset] sys_counter_reset,
+[SYS_counter_inc]   sys_counter_inc,
+[SYS_counter_get]   sys_counter_get,
 };
 
 void

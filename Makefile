@@ -180,6 +180,7 @@ UPROGS=\
 	_stressfs\
 	_usertests\
 	_wc\
+	_race\
 	_zombie\
 	_tracetest
 fs.img: mkfs README $(UPROGS)

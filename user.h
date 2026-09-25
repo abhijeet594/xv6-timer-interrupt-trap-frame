@@ -37,3 +37,6 @@ void* memset(void*, int, uint);
 void* malloc(uint);
 void free(void*);
 int atoi(const char*);
+int counter_reset(void);
+int counter_inc(void);
+int counter_get(void);
